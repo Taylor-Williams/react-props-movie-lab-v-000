@@ -37,10 +37,7 @@ export default class CardBack extends Component {
         <span className="rating"/>
         {this.generateRatingElement(this.props.IMDBRating)}
         <span />
-        <span className="genres"/>
-        {this.generateGenreElement(this.props.genres)}
-        <span />
-        <h5 className="genres"></h5>
+        <h5 className="genres">{this.generateGenreElement(this.props.genres)}</h5>
       </div>
     )
   }
