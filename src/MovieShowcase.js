@@ -8,7 +8,7 @@ export default class MovieShowcase extends Component {
     // map over your movieData array and return the correct
     return (
       <div>
-        {movieData.map((movie) => {new MovieCard(movie)})}
+        {movieData.map((movie) => <MovieCard movie=movie />}
       </div>
     )
   }
