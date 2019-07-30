@@ -8,7 +8,7 @@ export default class MovieShowcase extends Component {
     // map over your movieData array and return the correct
     return (
       <div className='movie-showcase'>
-        {movieData.map((movie) => <MovieCard title={movie.title} IMDBRatingrating={movie.IMDBRating} genres={movie.genres} poster={movie.poster} />)}
+        {movieData.map((movie) => <MovieCard title={movie.title} IMDBRating={movie.IMDBRating} genres={movie.genres} poster={movie.poster} />)}
       </div>
     )
   }
