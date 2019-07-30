@@ -45,4 +45,4 @@ MovieCard.defaultProps = {
   title : "unknown",
   rating : null,
   poster : "default"
-} 
+}
