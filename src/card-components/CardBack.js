@@ -25,6 +25,10 @@ export default class CardBack extends Component {
       return (
         <p>genres: {genres.join(", ")}</p>
       )
+    } else {
+      return (
+        <p>No Genre(s) Found</p>
+      )
     }
   }
 
