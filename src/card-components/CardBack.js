@@ -18,8 +18,7 @@ export default class CardBack extends Component {
     }
   }
 
-  generateGenreElement = () => {
-    genres = this.props.genres
+  generateGenreElement = (genres) => {
     if(genres.length){
       return (
         <p>genres: {genres.join(", ")}</p>
@@ -36,10 +35,10 @@ export default class CardBack extends Component {
       <div className="card-back">
         <h3 className="title">{this.props.title}</h3>
         <span className="rating"/>
-        {this.generateRatingElement()}
+        {this.generateRatingElement(this.props.IMDBRating)}
         <span />
         <span className="genres"/>
-        {this.generateGenreElement()}
+        {this.generateGenreElement(this.props.genres)}
         <span />
         <h5 className="genres"></h5>
       </div>
