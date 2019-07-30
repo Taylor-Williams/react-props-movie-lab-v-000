@@ -7,7 +7,7 @@ export default class MovieShowcase extends Component {
   generateMovieCards = () => {
     // map over your movieData array and return the correct
     return (
-      <div>
+      <div className='movie-showcase'>
         {movieData.map((movie) => <MovieCard movie={movie} />}
       </div>
     )
